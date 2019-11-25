@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import HomeView from './HomeView';
+import InboxView from './InboxView';
 import { connect } from 'react-redux';
 
-class HomeContainer extends Component {
+class InboxContainer extends Component {
   static navigationOptions = {
-    title: 'Title'
+    title: 'Inbox'
   }
   
   constructor(props) {
@@ -12,7 +12,7 @@ class HomeContainer extends Component {
   }
 
   render() {
-    return <HomeView {...this.props} />;
+    return <InboxView {...this.props} />;
   }
 }
 
@@ -27,4 +27,4 @@ function mapDispatchToProps() {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(HomeContainer);
+)(InboxContainer);

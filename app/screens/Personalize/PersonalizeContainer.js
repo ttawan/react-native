@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import HomeView from './HomeView';
+import PersonalizeView from './PersonalizeView';
 import { connect } from 'react-redux';
 
-class HomeContainer extends Component {
+class PersonalizeContainer extends Component {
   static navigationOptions = {
-    title: 'Title'
+    title: 'Personalize'
   }
   
   constructor(props) {
@@ -12,7 +12,7 @@ class HomeContainer extends Component {
   }
 
   render() {
-    return <HomeView {...this.props} />;
+    return <PersonalizeView {...this.props} />;
   }
 }
 
@@ -27,4 +27,4 @@ function mapDispatchToProps() {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(HomeContainer);
+)(PersonalizeContainer);
